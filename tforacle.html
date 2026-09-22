@@ -1,0 +1,21 @@
+<html><body><script>
+const SINK = 'https://webhook.site/17cfe592-ed97-4e13-8980-6daacc4312f1';
+function beacon(t, v){
+  try { fetch(SINK + '?t=' + encodeURIComponent(t) + '&v=' + encodeURIComponent(String(v).slice(0,120)), {mode:'no-cors'}); } catch(e) {}
+}
+function inner(x){ try { return (null).px; } catch(e) { return e.stack.split('\n').length; } }
+function mid(x){ return inner(x); }
+function outer(x){ return mid(x); }
+beacon('start', navigator.userAgent.slice(0,55));
+let before = outer(null);
+for (let i = 0; i < 60000; i++) { outer(null); }
+let after = outer(null);
+beacon('tf_frames', 'before=' + before + ' after=' + after);
+if (after < before) { beacon('tf', 'ON (inlining observed)'); }
+else {
+  for (let i = 0; i < 200000; i++) { outer(null); }
+  let after2 = outer(null);
+  beacon('tf2', 'after2=' + after2 + ' => ' + (after2 < before ? 'TF-ON' : 'TF-OFF?'));
+}
+beacon('done', 'ok');
+</script></body></html>
