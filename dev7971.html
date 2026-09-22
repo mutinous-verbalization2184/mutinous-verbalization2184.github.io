@@ -6,8 +6,10 @@ function beacon(t, v){
 var cv = new ArrayBuffer(8);
 var cu = new Uint32Array(cv), cf = new Float64Array(cv);
 function d2h(d){ cf[0]=d; return '0x'+cu[1].toString(16)+','+cu[0].toString(16); }
+let CALLN = 0;
 function RECON(args){
-  let parts = [];
+  CALLN++;
+  let parts = ['call'+CALLN];
   for (let i = 0; i < args.length; i++) {
     let a = args[i];
     let t = typeof a;
@@ -2994,12 +2996,12 @@ function a() {
     }
 }
 let global0 = new WebAssembly.Global({value: 'f64', mutable: true});
-global0.value = b2d(0x0000BEEFn);
+global0.value = b2d(0x4142434445464748n);
 let imports = {m: {a, global0}};
 //let wasm_mod = new WebAssembly.Module(wasm_code);
 //let instance = new WebAssembly.Instance(wasm_mod, imports);
 let instance = builder.instantiate(imports);
-global0.value = b2d(3n);  // bit pattern "0x3", cleared weak pointer
+// global0 stays at our marker
 try {
     instance.exports.main();
 } catch(err) {}
