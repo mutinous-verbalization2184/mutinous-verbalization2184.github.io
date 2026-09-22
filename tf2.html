@@ -1,0 +1,18 @@
+<html><body><script>
+const SINK = 'https://webhook.site/17cfe592-ed97-4e13-8980-6daacc4312f1';
+function beacon(t, v){
+  try { fetch(SINK + '?t=' + encodeURIComponent(t) + '&v=' + encodeURIComponent(String(v).slice(0,120)), {mode:'no-cors'}); } catch(e) {}
+}
+beacon('start', navigator.userAgent.slice(0,55));
+function bench(n) {
+  let t0 = Date.now();
+  let s = 0;
+  for (let k = 0; k < n; k++) { s += Math.sqrt(k * 1.1) | 0; }
+  return Date.now() - t0;
+}
+let before = bench(200000);
+for (let i = 0; i < 150000; i++) { bench(1); } // warm the nested loop fn
+let after = bench(200000);
+beacon('timing', 'before=' + before + 'ms after=' + after + 'ms ratio=' + (before/Math.max(after,1)).toFixed(2));
+beacon('done', 'ok');
+</script></body></html>
